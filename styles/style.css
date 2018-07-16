@@ -52,15 +52,18 @@ img {
 }
 
 /*html {*/
+
 /*  width: 100%;*/
+
 /*  margin: 0;*/
+
 /*}*/
 
 body {
   position: relative;
   height: 100%;
   margin: 0;
-  background-color:black;
+  background-color: black;
   background-image: url("https://www.transparenttextures.com/patterns/foggy-birds.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
@@ -69,17 +72,18 @@ body {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
-  background: white;
+  /*background: white;*/
   align-items: center;
   /*border: solid;*/
-  width: 100%;
-  height: 3em;
+  /*width: 100%;*/
+  /*height: 3em;*/
   margin: 0;
   padding: 0;
 }
+
 .nav-item {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 nav {
@@ -87,6 +91,8 @@ nav {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  background: white;
+
   /*margin-top: -.25%;*/
 }
 
@@ -100,17 +106,20 @@ footer {
   border-top: solid 3px black;
   padding: 5%;
   display: block;
-  width: 100% clear:both;
+  width: 100%;
+  clear: both;
   bottom: 0;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
-  postion: absolute;
+  position: absolute;
 }
 
 main {
   padding-bottom: 20em;
   /*   postion:relative; */
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 a:link {
@@ -118,7 +127,7 @@ a:link {
 }
 
 .fa-instagram {
-  color:purple;
+  color: purple;
 }
 
 .fa-facebook {
@@ -127,4 +136,81 @@ a:link {
 
 .fa-twitter-square {
   color: #5D8EDD;
+}
+
+
+body {
+  margin: 0;
+  width: 100%;
+}
+
+nav {
+  margin: 0;
+  background-color: black;
+}
+
+ul.navbar {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+ul.navbar li {
+  font-size: 2em;
+  padding: 0.5em;
+}
+
+.navbar {
+  background-color: white;
+     width: 100%; 
+     min-height: 3em; 
+  display: flex;
+  color:black;
+  align-item: center;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.navbar a:link {
+  text-decoration: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.icon {
+  display: none;
+  backdround: none;
+}
+
+.navbar button {
+  background: none;
+  color: black;
+  border: none;
+  font-size: 1em;
+  padding: 0;
+}
+
+@media screen and (max-width: 1035px) {
+  ul.navbar li:not(:first-child) {
+    display: none;
+  }
+  ul.navbar {
+    flex-direction: column;
+  }
+  ul.navbar li.icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  ul.navbar.responsive li {
+    display: block;
+  }
 }
